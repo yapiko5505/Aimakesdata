@@ -1,0 +1,233 @@
+header, main, footer {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 40vw; /* 9:16の縦横比 */
+    background-image: url('../Images/Main-img.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    margin: 0;
+    text-align: left;
+    color: white; /* 必要に応じて変更 */
+    font-size: 2em; /* 必要に応じて変更 */
+    padding-left: 35%;
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+}
+
+.hamburger-menu {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px; /* ボタンのクリック範囲を広げるための余白 */
+  }
+  
+  .hamburger-menu svg {
+    display: block;
+  }
+  
+  .menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: auto;
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 1000; /* 最前面に配置 */
+  }
+  
+  .show-menu {
+    display: block;
+  }
+  
+  .close-menu {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px; /* ボタンのクリック範囲を広げるための余白 */
+  }
+  
+  .close-menu svg {
+    display: block;
+  }
+  
+  .menu-items {
+    margin-top: 40px;
+  }
+  
+  .menu-item {
+    display: block;
+    font-size: 1.4rem;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+  }
+
+  .content01 {
+    height: 60vw;
+    position: relative;
+  }
+
+  .photo01, .photo02, .photo03 {
+    width: 17vw;
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .photo01 {
+    top: 28vh;
+    left: 7vw; 
+  }
+
+  .photo02 {
+    top: 10vh;
+    left: 30vw;
+  }
+
+  .photo03 {
+    bottom: 45vh;
+    right: 9vw;
+  }
+
+  .title {
+    position: absolute;
+    top: 10vh;
+    right: 14vw;
+    font-size: 3rem;
+    opacity: 0;
+    transform: translateY(15vh);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+  }
+  
+  .DragonFly {
+    width: 30vw;
+    position: absolute;
+    top: 27vh;
+    right: 32vw;
+    opacity: 0;
+    transform: translate(-50%, -100px);
+    transition: opacity 2.5s ease-out 0.7s, transform 2.5s ease-out 0.7s;
+  }
+
+  .satoyama-text {
+    position: absolute;
+    bottom: 35vh;
+    left: 32vw;
+    width: 25vw;
+  }
+
+  .content02 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .gallery-main, .selecter {
+    width: 50vw;
+    position: relative;
+  }
+  
+  .gallery-main img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .selecter h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  
+  .gallery-thumbnails {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1vw;
+  }
+  
+  .selecter-btn {
+    width: calc(33.33% - 1vw);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .selecter-btn img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .gallery-main::before {
+    content: "";
+    position: absolute;
+    top: 3.5%;
+    left: 3.5%;
+    width: 93%;
+    height: 93%;
+    border: 4px solid white;
+    box-sizing: border-box;
+  }
+
+  .satoyama-life {
+    display: grid;
+    grid-auto-columns: 50vw 25vw;
+    justify-content: space-between;
+    width: 85%;
+    margin: 25vh auto;
+  }
+  
+  .life-photo {
+    border-radius: 1vw;
+    overflow: hidden;
+  }
+
+  .life-photo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .life-kiji h2 {
+    font-size: 3rem;
+    height: auto;
+    padding-bottom: 3vh;
+    border-bottom: solid 1 black;
+    margin-bottom: 5vh;
+
+  }
+
+  .kiji-lead {
+    font-size: 1.5rem;
+    margin-bottom: 5vh;
+  }
+  
+  
+  
+  
+
+  
+  
+  
